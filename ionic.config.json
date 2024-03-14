@@ -1,0 +1,7 @@
+{
+  "name": "E-Sobati",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
