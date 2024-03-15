@@ -31,6 +31,38 @@ const routes: Routes = [
     path: 'changepass',
     loadChildren: () => import('./changepass/changepass.module').then( m => m.ChangepassPageModule)
   },
+  {
+    path: 'selectcity',
+    loadChildren: () => import('./selectcity/selectcity.module').then( m => m.SelectcityPageModule)
+  },
+  {
+    path: 'footer',
+    loadChildren: () => import('./footer/footer.module').then( m => m.FooterPageModule)
+  },
+  {
+    path: 'allhospital',
+    loadChildren: () => import('./allhospital/allhospital.module').then( m => m.AllhospitalPageModule)
+  },
+  {
+    path: 'allmedical',
+    loadChildren: () => import('./allmedical/allmedical.module').then( m => m.AllmedicalPageModule)
+  },
+  {
+    path: 'allambulance',
+    loadChildren: () => import('./allambulance/allambulance.module').then( m => m.AllambulancePageModule)
+  },
+  {
+    path: 'alljobs',
+    loadChildren: () => import('./alljobs/alljobs.module').then( m => m.AlljobsPageModule)
+  },
+  {
+    path: 'hospitaldetails',
+    loadChildren: () => import('./hospitaldetails/hospitaldetails.module').then( m => m.HospitaldetailsPageModule)
+  },
+  {
+    path: 'appointment',
+    loadChildren: () => import('./appointment/appointment.module').then( m => m.AppointmentPageModule)
+  },
 ];
 
 @NgModule({

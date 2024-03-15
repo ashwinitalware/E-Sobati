@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Select City</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="p-4">
+    <p>We are available in the following city</p>
+  </div>
+  <ion-list  lines="none" class="p-2">
+    <ion-radio-group >
+      <ion-item >
+        <ion-label>Amravati</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+
+      <ion-item >
+        <ion-label>Nagpur</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+
+      <ion-item >
+        <ion-label>Pune</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+
+      <ion-item >
+        <ion-label>Thane</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>
+
+<ion-footer routerLink="/dashboard" >
+  <ion-toolbar color="primary">
+    <ion-title align="center">
+      Select City
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

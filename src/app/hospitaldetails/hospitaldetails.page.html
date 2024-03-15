@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> Hospital Details </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="p-2">
+    <div class=" w-full ">
+      <div
+        class="h-48 lg:h-auto w-full flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        style="background-image: url('https://images.unsplash.com/photo-1587351021355-a479a299d2f9?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" title="Woman holding a mug">
+      </div>
+      <div
+        class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class=" flex justify-between">
+          <div class="text-gray-900 font-bold text-lg mb-2">Zenith Hospital</div>
+          <p class="text-sm text-red-900 flex items-center">
+          1000 + patients
+          </p>
+        </div>
+        <p class="text-xs text-blue-600 -mt-1">Cardiologist Specialist</p>
+
+        <p class="text-xs text-gray-600 mt-1">
+          <ion-icon class="text-blue-600" name="location"></ion-icon>&nbsp; Dastur Nagar Amravati
+        </p>
+        <div class="border-b border-dashed border-red-900  mt-1 mb-2"></div>
+
+
+
+        <ion-label class="text-black text-md mt-2">Working Time</ion-label>
+
+        <p class="text-gray-500 text-xs mt-1">
+          <b>Mon-Sat : </b>10:00 AM to 9:00 PM
+        </p>
+        <p class="text-gray-500 text-xs">
+          <b>Sunday : </b>&nbsp; 10:00 AM to 2: 00PM
+        </p>
+        <div class="border-b border-dashed border-red-900  mt-1 mb-2"></div>
+
+
+
+        <ion-label class="text-black text-md mt-2">About</ion-label>
+
+        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+
+        <!-- <div class="pt-3 " routerLink="/appointment">
+          <button expand="block" class="btn-3 w-full p-4 text-white rounded-sm text-xs">
+            Make Appointment
+          </button>
+        </div> -->
+
+  <div class="border-b border-dashed border-red-900  mt-1 mb-2"></div>
+
+
+        <ion-row>
+          <ion-col size="4">
+            <p class="text-gray-800 text-base font-bold "> All Doctors</p>
+          </ion-col>
+          <ion-col size="8">
+            <div class="flex justify-start border border-gray-300 rounded-md">
+              <span>
+                <ion-icon class="text-gray-600 mt-3 pr-1 pl-3" name="search"></ion-icon>
+              </span>
+              <span>
+                <ion-input lines="none" class="text-sm pl-2 w-full" 
+                  placeholder="Search doctor's here"></ion-input>
+              </span>
+            </div>
+          </ion-col> 
+
+
+          <ion-col routerLink="/appointment" size="12"  class="  mt-2 rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md w-full">
+            <ion-row>
+              <ion-col size="4">
+                <img class="rounded-sm shadow-md img1" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </ion-col>
+      
+              <ion-col size="7" class="pl-3">
+                <ion-label class="text-black text-md"><b>Dr. Neha Patil</b></ion-label>
+                <p class="text-xs text-blue-800">Cardiology</p>
+                <p class="mt-2 text-xs text-gray-300">4 years of experience</p>
+                <p class="text-xs text-gray-500 mt-2"> 4.5 <ion-icon name="star" class="text-xs mt-1 text-yellow-500">
+                  </ion-icon> |
+                  100+
+                  patients
+                </p>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+              </ion-col>
+      
+            </ion-row>
+          </ion-col>
+
+          <ion-col routerLink="/appointment" size="12"  class="mt-2 rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md w-full">
+            <ion-row>
+              <ion-col size="4">
+                <img class="rounded-sm shadow-md img1" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </ion-col>
+      
+              <ion-col size="7" class="pl-3">
+                <ion-label class="text-black text-md"><b>Dr. Pawan Patil</b></ion-label>
+                <p class="text-xs text-blue-800">Cardiology</p>
+                <p class="mt-2 text-xs text-gray-300">4 years of experience</p>
+                <p class="text-xs text-gray-500 mt-2"> 4.5 <ion-icon name="star" class="text-xs mt-1 text-yellow-500">
+                  </ion-icon> |
+                  100+
+                  patients
+                </p>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+              </ion-col>
+      
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+    
+  
+   
+  
+      </div>
+    </div>
+  </div>
+</ion-content>
+<app-footer></app-footer>
+

@@ -1,0 +1,259 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> Appointment </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="p-2">
+    <div class="mt-2 mb-2">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-md shadow-md img1" src="assets/4.png" alt="">
+        </ion-col>
+
+        <ion-col size="8" class="pl-3">
+          <ion-label class="text-black text-md"><b>Dr. Pawan Patil</b></ion-label>
+          <p class="text-xs text-blue-800 pl-1">Cardiology&nbsp;<ion-icon class="text-yellow-500 mt-1 text-xs"
+              name="star">
+            </ion-icon>
+            <ion-icon class="text-yellow-500 mt-1 text-xs" name="star"></ion-icon>
+            <ion-icon class="text-yellow-500 mt-1 text-xs" name="star"></ion-icon>
+            <ion-icon class="text-yellow-500 mt-1 text-xs" name="star-half"></ion-icon>
+          </p>
+          <p class="text-xs text-gray-500 mt-1 pl-1">
+            <ion-icon class="text-blue-600" name="call"></ion-icon>&nbsp; +91 8668543490
+          </p>
+
+          <p class="text-xs text-gray-500 mt-1 pl-1">
+            <ion-icon class="text-blue-600" name="location"></ion-icon>&nbsp; Sai Hospital Dastur Nagar Amravati
+          </p>
+        </ion-col>
+
+      </ion-row>
+    </div>
+
+
+    <ion-label class="text-black text-md mt-4 mb-4 pl-2">Schedule</ion-label>
+    <swiper-container #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true" [slidesPerView]="2"
+      [spaceBetween]="10">
+      <swiper-slide >
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 tabbg">
+            <p class="text-sm text-white mt-3">01</p>
+            <p class="text-xs text-white">Feb</p>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+    <!-- <ion-slides class="slider mt-2 mb-2 pl-2" pager="true" [options]="slideOptions12" #slider
+      (ionSlidesDidLoad11)="slidesDidLoad12(slider)">
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 tabbg">
+            <p class="text-sm text-white mt-3">01</p>
+            <p class="text-xs text-white">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">02</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">03</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">04</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">05</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">06</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">07</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">08</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class="w-full">
+          <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2">
+            <p class="text-sm text-gray-900 mt-3">09</p>
+            <p class="text-xs text-blue-800">Feb</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides> -->
+
+
+    <ion-label class="text-black text-md mt-4 mb-4 pl-2">Avaliable Time</ion-label>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">10:00 AM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">11:00 AM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">12:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10 ">
+              <p class="text-xs text-gray-600 mt-3">01:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">02:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">03:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">04:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">05:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">06:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
+              <p class="text-xs text-white mt-3">07:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">08:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-xs text-gray-600 mt-3">09:00 PM</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-label class="text-black text-md mt-4 mb-4 pl-2">Slots</ion-label>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-sm text-gray-600 mt-2">Morning</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-sm text-gray-600 mt-2">Aternoon</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
+              <p class="text-sm text-white mt-2">Evening</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="pt-3 pl-2 pr-2" routerLink="/app-details">
+      <button expand="block" class="btn-3 w-full p-4 text-white rounded-sm text-xs">
+        Book Appointment
+      </button>
+    </div>
+
+  </div>
+</ion-content>
+<app-footer></app-footer>
