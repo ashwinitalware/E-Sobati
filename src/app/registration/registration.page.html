@@ -1,0 +1,64 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <img src="assets/wave.png" alt="">
+  <form #form_login="ngForm">
+    <div >
+      <div align="center" style="margin-top: 7%;">
+        <img src="assets/e-icon.png" alt="" width="150" height="150" />
+      </div>
+
+      <div class="p-4 ">
+
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="text" name="name" value="name" ngModel placeholder="Enter Full Name"></ion-input>
+        </ion-item>
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="number" name="mobile" value="mobile" ngModel placeholder="Enter Mobile Number"></ion-input>
+        </ion-item>
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="email" name="email" value="email" ngModel placeholder="Enter Email"></ion-input>
+        </ion-item>
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="text" name="address" value="address" ngModel placeholder="Enter Address"></ion-input>
+        </ion-item>
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="text" name="city" value="city" ngModel placeholder="Enter City"></ion-input>
+        </ion-item>
+
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="password" name="email" value="email" ngModel placeholder="Enter Password"></ion-input>
+        </ion-item>
+
+        
+        <div routerLink="/dashboard">
+          <button  type="submit" class="btn-grad mt-4">
+            <span style="float: left; font-weight: bold; font-size: 0.9rem">Register</span>
+            <span style="float: right; font-size: 0.9rem">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+          </button>
+        </div>
+
+        <div class="p-1 flex justify-center" routerLink="/login">
+        <p class="text-sm text-sm text-gray-500">Have an account? <span  class="text-sm text-sm text-blue-700 font-bold">Login</span></p>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</ion-content>
+
