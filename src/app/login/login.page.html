@@ -2,8 +2,8 @@
   <img src="assets/wave.png" alt="">
   <form #form_login="ngForm">
     <div >
-      <div align="center" style="margin-top: 7%;">
-        <img src="assets/e-icon.png" alt="" width="150" height="150" />
+      <div align="center" style="margin-top: 20%;">
+        <img src="assets/logonew_new.png" alt="" width="150" height="150" />
       </div>
 
       <div class="p-4 ">
@@ -15,9 +15,10 @@
           <ion-input type="text" name="pass" value="pass" ngModel placeholder="Enter Password"></ion-input>
         </ion-item>
 
-        <div class="p-1 flex justify-end" routerLink="/forgotpass">
+        <div class="p-1 flex justify-end mt-1" routerLink="/forgotpass">
         <p class="text-sm text-sm text-blue-700 font-bold">Forgot Password?</p>
         </div>
+        
         <div routerLink="/dashboard">
           <button  type="submit" class="btn-grad mt-4">
             <span style="float: left; font-weight: bold; font-size: 0.9rem">Login</span>
@@ -27,7 +28,7 @@
           </button>
         </div>
 
-        <div class="p-1 flex justify-center" routerLink="/registration">
+        <div class="p-1 flex justify-center mt-1" routerLink="/registration">
         <p class="text-sm text-sm text-gray-500">Don't have an account? <span  class="text-sm text-sm text-blue-700 font-bold">Register</span></p>
         </div>
       </div>

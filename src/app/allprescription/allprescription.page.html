@@ -1,0 +1,52 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> All Prescription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="p-2">
+    <div class="border border-gray-300 rounded-md p-2">
+      <div class="flex justify-between">
+        <p class="text-md font-bold text-black">Manasvi Medicals</p>
+      </div>
+
+      <div>
+        <ion-row class="border-b border-gray-300">
+          <ion-col size="2">
+            1.
+          </ion-col>
+          <ion-col size="6">
+            Medicien Name
+          </ion-col>
+          <ion-col size="4">
+            5 Qty.
+          </ion-col>
+        </ion-row>
+        <ion-row class="border-b border-gray-300">
+          <ion-col size="2">
+            2.
+          </ion-col>
+          <ion-col size="6">
+            Medicien Name
+          </ion-col>
+          <ion-col size="4">
+            10 Qty.
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+
+    <ion-fab routerLink="/addprescription" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab>
+ </div>
+</ion-content>

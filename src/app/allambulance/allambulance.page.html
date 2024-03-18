@@ -1,13 +1,101 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>allambulance</ion-title>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> All Ambulance</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">allambulance</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="p-2">
+    <div class="pl-2 pr-2">
+      <ion-item class="border border-gray-300 rounded-md" lines="none">
+        <ion-select justify="space-between" label="Select Hospital" placeholder="Select Hospital">
+          <ion-select-option value="zenith">Zenith Hospital</ion-select-option>
+          <ion-select-option value="dentio">Dentio Clinic</ion-select-option>
+          <ion-select-option value="bonde">Bonde Hospital</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/view-graphic-3d-ambulance_23-2150849101.jpg?t=st=1710496763~exp=1710500363~hmac=b546ee82d220e9b873dacfe00ae549c1fd1873ab394c5d41f6f3a83ebdd0f933&w=740"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Rakesh Patil</b></ion-label>
+          <p class="text-xs text-blue-800">+91 7889787878</p>
+          <p class="text-xs text-gray-300">Dastur Nagar Amravati </p>
+          <div class="flex justify-between mt-2">
+            <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full">Book</button> &nbsp;
+            <button class="rounded-md border border-red-600  bg-red-100 text-red-600 text-sm p-2 w-full "> <ion-icon class="mt-1 text-xs" name="call"></ion-icon> Call</button>
+          </div>
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md mt-2">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/view-graphic-3d-ambulance_23-2150849101.jpg?t=st=1710496763~exp=1710500363~hmac=b546ee82d220e9b873dacfe00ae549c1fd1873ab394c5d41f6f3a83ebdd0f933&w=740"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Nishant Joshi</b></ion-label>
+          <p class="text-xs text-blue-800">+91 9989787878</p>
+          <p class="mt-2 text-xs text-gray-300">Sai Nagar Amravati </p>
+          <div class="flex justify-between mt-2">
+            <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full">Book</button> &nbsp;
+            <button class="rounded-md border border-red-600  bg-red-100 text-red-600 text-sm p-2 w-full "> <ion-icon class="mt-1 text-xs" name="call"></ion-icon> Call</button>
+          </div>
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+
+    <!-- routerLink="/bookambulance" -->
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md mt-2">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/view-graphic-3d-ambulance_23-2150849101.jpg?t=st=1710496763~exp=1710500363~hmac=b546ee82d220e9b873dacfe00ae549c1fd1873ab394c5d41f6f3a83ebdd0f933&w=740"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Sankalp Kumar</b></ion-label>
+          <p class="text-xs text-blue-800">+91 7656453423</p>
+          <p class="mt-2 text-xs text-gray-300">Dastur Nagar Amravati</p>
+          <div class="flex justify-between mt-2">
+            <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full">Book</button> &nbsp;
+            <button class="rounded-md border border-red-600  bg-red-100 text-red-600 text-sm p-2 w-full "> <ion-icon class="mt-1 text-xs" name="call"></ion-icon> Call</button>
+          </div>
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+
+
+  </div>
 </ion-content>
+<app-footer></app-footer>

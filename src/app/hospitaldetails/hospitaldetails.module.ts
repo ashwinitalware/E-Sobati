@@ -9,6 +9,7 @@ import { HospitaldetailsPageRoutingModule } from './hospitaldetails-routing.modu
 import { HospitaldetailsPage } from './hospitaldetails.page';
 import { FooterPageModule } from '../footer/footer.module';
 import { FooterPage } from '../footer/footer.page';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   imports: [
@@ -19,6 +20,8 @@ import { FooterPage } from '../footer/footer.page';
     FooterPageModule
   ],
   declarations: [HospitaldetailsPage],
-  exports:[FooterPage]
+  exports:[FooterPage],
+  
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HospitaldetailsPageModule {}

@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { AlljobsPageRoutingModule } from './alljobs-routing.module';
 
 import { AlljobsPage } from './alljobs.page';
+import { FooterPageModule } from '../footer/footer.module';
+import { FooterPage } from '../footer/footer.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AlljobsPageRoutingModule
+    AlljobsPageRoutingModule,
+    FooterPageModule
   ],
-  declarations: [AlljobsPage]
+  declarations: [AlljobsPage],
+  exports:[FooterPage]
 })
 export class AlljobsPageModule {}

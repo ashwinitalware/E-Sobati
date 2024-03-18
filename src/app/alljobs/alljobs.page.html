@@ -1,13 +1,142 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>alljobs</ion-title>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> All Jobs</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">alljobs</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="p-2">
+
+
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/coins-job-word_23-2148568014.jpg?w=1380&t=st=1710498787~exp=1710499387~hmac=59275408ac9d53dfd7c107c1f9f9c2a796b36bbfb1a096521708a7cb2fb53856"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Data Entry Operator</b></ion-label>
+          <p class="text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, tempore.</p>
+       
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+        <ion-col size="12" routerLink="/applyjob">
+          <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full"  id="open-modal">Apply</button> 
+
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md mt-2">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/coins-job-word_23-2148568014.jpg?w=1380&t=st=1710498787~exp=1710499387~hmac=59275408ac9d53dfd7c107c1f9f9c2a796b36bbfb1a096521708a7cb2fb53856"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Security Guard</b></ion-label>
+          <p class="mt-2 text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, sit?</p>
+       
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+        <ion-col size="12" routerLink="/applyjob">
+          <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full"  id="open-modal">Apply</button> 
+
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+
+    <ion-card 
+      class="rounded-md hover:rounded-md border-2 border-gray-200 hover:border-blue-100 shadow-sm hover:shadow-md mt-2">
+      <ion-row>
+        <ion-col size="4">
+          <img class="rounded-sm shadow-md img1"
+            src="https://img.freepik.com/free-photo/coins-job-word_23-2148568014.jpg?w=1380&t=st=1710498787~exp=1710499387~hmac=59275408ac9d53dfd7c107c1f9f9c2a796b36bbfb1a096521708a7cb2fb53856"
+            alt="">
+        </ion-col>
+
+        <ion-col size="7" class="pl-3">
+          <ion-label class="text-black text-md"><b>Pharmacist</b></ion-label>
+          <p class="mt-2 text-xs text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, debitis?</p>
+         
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
+        </ion-col>
+        <ion-col size="12" routerLink="/applyjob">
+          <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full" >Apply</button> 
+
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <!-- <ion-modal #modal trigger="open-modal">
+      <ng-template>
+        <ion-content>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <ion-buttons slot="end">
+              <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+          <ion-list>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Connor Smith</h2>
+                <p>Sales Rep</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Daniel Smith</h2>
+                <p>Product Designer</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Greg Smith</h2>
+                <p>Director of Operations</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Zoey Smith</h2>
+                <p>CEO</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-modal> -->
+
+  </div>
+
 </ion-content>
+<app-footer></app-footer>

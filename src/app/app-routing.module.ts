@@ -63,6 +63,34 @@ const routes: Routes = [
     path: 'appointment',
     loadChildren: () => import('./appointment/appointment.module').then( m => m.AppointmentPageModule)
   },
+  {
+    path: 'addprescription',
+    loadChildren: () => import('./addprescription/addprescription.module').then( m => m.AddprescriptionPageModule)
+  },
+  {
+    path: 'allprescription',
+    loadChildren: () => import('./allprescription/allprescription.module').then( m => m.AllprescriptionPageModule)
+  },
+  {
+    path: 'bookambulance',
+    loadChildren: () => import('./bookambulance/bookambulance.module').then( m => m.BookambulancePageModule)
+  },
+  {
+    path: 'addpatient',
+    loadChildren: () => import('./addpatient/addpatient.module').then( m => m.AddpatientPageModule)
+  },
+  {
+    path: 'operationenquiry',
+    loadChildren: () => import('./operationenquiry/operationenquiry.module').then( m => m.OperationenquiryPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'applyjob',
+    loadChildren: () => import('./applyjob/applyjob.module').then( m => m.ApplyjobPageModule)
+  },
 ];
 
 @NgModule({

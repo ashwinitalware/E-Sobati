@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> Add Prescription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="p-2">
+
+    <ion-row>
+      <!-- <ion-col size="7">
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="text" name="medical" value="medical" ngModel placeholder="Enter Medicine Name"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
+          <ion-input type="number" name="qty" value="qty" ngModel placeholder="Qty"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="bg-blue-400 rounded-md p-4 text-white mt-3 " name="add"></ion-icon>
+      </ion-col>
+
+      <ion-col size="12">
+        <div>
+          <ion-row class="border-b border-gray-300">
+            <ion-col size="2">
+              1.
+            </ion-col>
+            <ion-col size="6">
+              Panadol
+            </ion-col>
+            <ion-col size="4">
+              5 Qty.
+            </ion-col>
+          </ion-row>
+          <ion-row class="border-b border-gray-300">
+            <ion-col size="2">
+              2.
+            </ion-col>
+            <ion-col size="6">
+              Tylenol
+            </ion-col>
+            <ion-col size="4">
+              10 Qty.
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col> -->
+
+
+      <div class="grid w-full items-center gap-1.5 pl-2 mt-3">
+        <label
+          class="text-md text-blue-500 font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Upload
+          Prescription</label>
+        <input id="picture" type="file"
+          class="flex h-12 w-full rounded-md border border-input bg-white px-4 py-3 text-sm text-gray-400 file:border-0 file:bg-transparent file:text-gray-600 file:text-sm file:font-medium">
+      </div>
+
+    <ion-col size="12">
+      <div routerLink="/allprescription">
+        <button  type="submit" class="btn-grad mt-4">
+          <span style="float: left; font-weight: bold; font-size: 0.9rem">Submit</span>
+          <span style="float: right; font-size: 0.9rem">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </span>
+        </button>
+      </div>
+    </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<app-footer></app-footer>
