@@ -70,5 +70,20 @@
     transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
     animation: var(--animation, none) var(--duration) var(--easing) infinite;
   }
+  swiper-container {
+    width: 100%;
+    // height: 180px;
+    --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #999999);
+    --swiper-pagination-color: var(--ion-color-primary, #3880ff);
+  }
+  swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabbg{
+    background-image: linear-gradient(to right,   #57aff6 0%, #7dc5ff 100%);
+  }
   
  

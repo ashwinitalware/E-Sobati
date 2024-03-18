@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons color="light" slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light"> My Jobs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div class="p-4">
+    <div class="border border-gray-300 bg-gray-50 rounded-md">
+      <div class="flex justify-between">
+        <p class="text-black font-semibold text-sm pl-2 mt-2 pr-2">Security Guard</p>
+        <p class="bg-green-200 text-green-600 text-xs font-semibold p-1 pl-2 pr-2 rounded-sm"> Applied</p>
+      </div>
+      <p class="text-sm text-gray-400 pl-2 pr-2 mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, accusantium!</p>
+    </div>
+
+
+    <div class="border border-gray-300 bg-gray-50 rounded-md mt-3">
+      <div class="flex justify-between">
+        <p class="text-black font-semibold text-sm pl-2 mt-2 pr-2">Pharmacist</p>
+        <p class="bg-green-200 text-green-600 text-xs font-semibold p-1 pl-2 pr-2 rounded-sm"> Applied</p>
+      </div>
+      <p class="text-sm text-gray-400 pl-2 pr-2 mt-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, accusantium!</p>
+    </div>
+  </div>
+  <ion-fab routerLink="/applyjob" slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab>
+</ion-content>

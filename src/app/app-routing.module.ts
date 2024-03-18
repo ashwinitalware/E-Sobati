@@ -91,6 +91,18 @@ const routes: Routes = [
     path: 'applyjob',
     loadChildren: () => import('./applyjob/applyjob.module').then( m => m.ApplyjobPageModule)
   },
+  {
+    path: 'appointmenthistory',
+    loadChildren: () => import('./appointmenthistory/appointmenthistory.module').then( m => m.AppointmenthistoryPageModule)
+  },
+  {
+    path: 'appliedjobs',
+    loadChildren: () => import('./appliedjobs/appliedjobs.module').then( m => m.AppliedjobsPageModule)
+  },
+  {
+    path: 'notifications',
+    loadChildren: () => import('./notifications/notifications.module').then( m => m.NotificationsPageModule)
+  },
 ];
 
 @NgModule({

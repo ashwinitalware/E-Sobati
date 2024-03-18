@@ -57,331 +57,10 @@
   <div class="border-b border-dashed border-red-900  mt-1 mb-2"></div>
 
   
-  <div>
-    <ion-item class="border border-gray-300 rounded-md" lines="none">
-      <ion-select justify="space-between" label="Select Patients" placeholder="Select Patients">
-        <ion-select-option value="vaibhav">Vaibhav Lande</ion-select-option>
-        <ion-select-option value="bhavana">Bhavana Tale</ion-select-option>
-        <ion-select-option value="yash">Yash Dhokane</ion-select-option>
-      </ion-select>
-    </ion-item>
+  
+ 
 
-    <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-      <ion-input type="number" name="mobile" value="mobile" ngModel placeholder="Enter Mobile Number"></ion-input>
-    </ion-item>
-
-    <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-      <ion-input type="number" name="age" value="age" ngModel placeholder="Enter Age"></ion-input>
-    </ion-item>
-
-    <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-      <ion-select justify="space-between" label="Select Gender" placeholder="Select Gender">
-        <ion-select-option value="female">Female</ion-select-option>
-        <ion-select-option value="male">Male</ion-select-option>
-        <ion-select-option value="other">Other</ion-select-option>
-      </ion-select>
-    </ion-item>
-
-    <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-      <ion-select justify="space-between" label="Visit Type" placeholder="Visit Type">
-        <ion-select-option value="female">First OPD</ion-select-option>
-        <ion-select-option value="male">Follow up</ion-select-option>
-        <ion-select-option value="other">Emergency </ion-select-option>
-      </ion-select>
-    </ion-item>
-
-  </div>
-
-  <div class="grid w-full items-center gap-1.5 pl-1 mt-2">
-    <label class="text-md text-black font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Upload Old Report</label>
-    <input id="picture" type="file" class="flex h-12 w-full rounded-md border border-input bg-white px-4 py-3 text-sm text-gray-400 file:border-0 file:bg-transparent file:text-gray-600 file:text-sm file:font-medium">
-</div>
-
-  <div class="mt-2">
-    <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Schedule</ion-label>
-  </div>
-
-  <swiper-container class="mt-2" #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true" [slidesPerView]="6"
-    [spaceBetween]="10">
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 tabbg text-center">
-          <p class="text-sm text-white mt-3">01</p>
-          <p class="text-xs text-white">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">02</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">03</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">04</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">05</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">06</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">07</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">08</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">09</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">10</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">11</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">12</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">15</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">16</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">17</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">18</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">19</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide >
-      <div class="w-full">
-        <div class="border border-gray-200 rounded-full w-12 h-20 pt-2 pb-2 text-center">
-          <p class="text-sm text-gray-900 mt-3">20</p>
-          <p class="text-xs text-blue-800">Mar</p>
-        </div>
-      </div>
-    </swiper-slide>
-  </swiper-container>
-
-
- <div class="mt-2">
-    <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Avaliable Time</ion-label>
-  </div>
-  <ion-grid class="mt-1">
-    <ion-row>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">10:00 AM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">11:00 AM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">12:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10 ">
-            <p class="text-xs text-gray-600 mt-3">01:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">02:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">03:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">04:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">05:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">06:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
-            <p class="text-xs text-white mt-3">07:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">08:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="3">
-        <div class="w-full" align="center">
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-xs text-gray-600 mt-3">09:00 PM</p>
-          </div>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <div class="mt-2">
-    <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Slots</ion-label>
-  </div>
-
-  <!-- <ion-label class="text-black text-md mt-4 mb-4 pl-2">Slots</ion-label> -->
-
-
-    <ion-row>
-      <ion-col size="4">
-        <div class="w-full" align="center" >
-          <div class="border border-gray-200 rounded-full w-full h-10">
-            <p class="text-sm text-gray-600 mt-2">Morning</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="4">
-        <div class="w-full" align="center" >
-          <div class="border border-gray-200 rounded-full w-30 h-10">
-            <p class="text-sm text-gray-600 mt-2">Aternoon</p>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col size="4">
-        <div class="w-full" align="center" >
-          <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
-            <p class="text-sm text-white mt-2">Evening</p>
-          </div>
-        </div>
-      </ion-col>
-    </ion-row>
-  <div >
-    <button  type="submit" class="btn-grad mt-4" routerLink="/dashboard">
-      <span style="float: left; font-weight: bold; font-size: 0.9rem"> Book Appointment</span>
-      <span style="float: right; font-size: 0.9rem">
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </span>
-    </button>
-  </div>
-
-        <!-- <ion-row>
+        <ion-row>
           <ion-col size="4">
             <p class="text-gray-800 text-base font-bold "> All Doctors</p>
           </ion-col>
@@ -404,19 +83,14 @@
                 <img class="rounded-sm shadow-md img1" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
               </ion-col>
       
-              <ion-col size="7" class="pl-3">
+              <ion-col size="8" class="pl-3">
                 <ion-label class="text-black text-md"><b>Dr. Pawan Patil</b></ion-label>
-                <p class="text-xs text-blue-800">Cardiology</p>
+                <p class="text-xs text-blue-800">Cardiology | 100+
+                  patients</p>
                 <p class="mt-2 text-xs text-gray-300">4 years of experience</p>
-                <p class="text-xs text-gray-500 mt-2"> 4.5 <ion-icon name="star" class="text-xs mt-1 text-yellow-500">
-                  </ion-icon> |
-                  100+
-                  patients
-                </p>
+                <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full mt-2">Book</button>
               </ion-col>
-              <ion-col size="1">
-                <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
-              </ion-col>
+              
       
             </ion-row>
           </ion-col>
@@ -427,25 +101,20 @@
                 <img class="rounded-sm shadow-md img1" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
               </ion-col>
       
-              <ion-col size="7" class="pl-3">
+              <ion-col size="8" class="pl-3">
                 <ion-label class="text-black text-md"><b>Dr. Neha Patil</b></ion-label>
-                <p class="text-xs text-blue-800">Cardiology</p>
+                <p class="text-xs text-blue-800">Cardiology |  100+
+                  patients</p>
                 <p class="mt-2 text-xs text-gray-300">4 years of experience</p>
-                <p class="text-xs text-gray-500 mt-2"> 4.5 <ion-icon name="star" class="text-xs mt-1 text-yellow-500">
-                  </ion-icon> |
-                  100+
-                  patients
-                </p>
+                <button class="rounded-md bg-blue-500 text-white text-sm p-2 w-full mt-2">Book</button>
               </ion-col>
-              <ion-col size="1">
-                <ion-icon class="text-gray-400 hover:text-blue-600 text-sm" name="heart"></ion-icon>
-              </ion-col>
+              
       
             </ion-row>
           </ion-col>
 
        
-        </ion-row> -->
+        </ion-row>
 
     
   

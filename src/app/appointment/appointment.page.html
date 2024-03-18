@@ -47,22 +47,9 @@
         </ion-select>
       </ion-item>
 
-      <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-        <ion-input type="number" name="mobile" value="mobile" ngModel placeholder="Enter Mobile Number"></ion-input>
-      </ion-item>
+      <p class="bg-blue-100 p-1 text-blue-600 text-xs border border-blue-300 rounded-sm text-center mt-1">+91 8789563232 | Female - 24</p>
 
-      <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-        <ion-input type="number" name="age" value="age" ngModel placeholder="Enter Age"></ion-input>
-      </ion-item>
-
-      <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
-        <ion-select justify="space-between" label="Select Gender" placeholder="Select Gender">
-          <ion-select-option value="female">Female</ion-select-option>
-          <ion-select-option value="male">Male</ion-select-option>
-          <ion-select-option value="other">Other</ion-select-option>
-        </ion-select>
-      </ion-item>
-
+    
       <ion-item class="border border-gray-300 rounded-md mt-3" lines="none">
         <ion-select justify="space-between" label="Visit Type" placeholder="Visit Type">
           <ion-select-option value="female">First OPD</ion-select-option>
@@ -73,10 +60,10 @@
 
     </div>
 
-    <div class="grid w-full items-center gap-1.5 pl-1 mt-2">
+    <!-- <div class="grid w-full items-center gap-1.5 pl-1 mt-2">
       <label class="text-md text-black font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Upload Old Report</label>
       <input id="picture" type="file" class="flex h-12 w-full rounded-md border border-input bg-white px-4 py-3 text-sm text-gray-400 file:border-0 file:bg-transparent file:text-gray-600 file:text-sm file:font-medium">
-</div>
+</div> -->
 
     <div class="mt-2">
       <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Schedule</ion-label>
@@ -165,6 +152,39 @@
         </div>
       </swiper-slide>
     </swiper-container>
+
+
+    <div class="mt-2">
+      <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Slots</ion-label>
+    </div>
+
+    <!-- <ion-label class="text-black text-md mt-4 mb-4 pl-2">Slots</ion-label> -->
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-sm text-gray-600 mt-2">Morning</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10">
+              <p class="text-sm text-gray-600 mt-2">Aternoon</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="w-full" align="center">
+            <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
+              <p class="text-sm text-white mt-2">Evening</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
 
    <div class="mt-2">
@@ -259,39 +279,9 @@
       </ion-row>
     </ion-grid>
 
-    <div class="mt-2">
-      <ion-label class="text-black font-semibold text-md mt-5 mb-4 pl-2">Slots</ion-label>
-    </div>
-
-    <!-- <ion-label class="text-black text-md mt-4 mb-4 pl-2">Slots</ion-label> -->
-
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <div class="w-full" align="center">
-            <div class="border border-gray-200 rounded-full w-30 h-10">
-              <p class="text-sm text-gray-600 mt-2">Morning</p>
-            </div>
-          </div>
-        </ion-col>
-        <ion-col size="4">
-          <div class="w-full" align="center">
-            <div class="border border-gray-200 rounded-full w-30 h-10">
-              <p class="text-sm text-gray-600 mt-2">Aternoon</p>
-            </div>
-          </div>
-        </ion-col>
-        <ion-col size="4">
-          <div class="w-full" align="center">
-            <div class="border border-gray-200 rounded-full w-30 h-10 tabbg">
-              <p class="text-sm text-white mt-2">Evening</p>
-            </div>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+   
     <div >
-      <button  type="submit" class="btn-grad mt-4" routerLink="/dashboard">
+      <button  type="submit" class="btn-grad mt-4" routerLink="/appointmenthistory">
         <span style="float: left; font-weight: bold; font-size: 0.9rem"> Book Appointment</span>
         <span style="float: right; font-size: 0.9rem">
           <ion-icon name="arrow-forward-outline"></ion-icon>
